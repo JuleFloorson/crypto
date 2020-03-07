@@ -1,0 +1,45 @@
+@use './theme.scss';
+
+.header {
+  background: theme.$primary-color;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 5px theme.$secondary-color;
+}
+
+.logoImage {
+  height: 150px;
+  margin-left: 10px;
+}
+.button {
+  background: theme.$secondary-color;
+  width: 140px;
+  height: 110px;
+  margin-right: 50px;
+  border-radius: 25px;
+  border: 4px solid theme.$hightlight-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.stripeOne {
+  background-color: theme.$hightlight-color;
+  height: 8px;
+  width: 100px;
+  margin-top: 10px;
+}
+.stripeTwo {
+  background-color: theme.$hightlight-color;
+  height: 8px;
+  width: 100px;
+}
+.stripeThree {
+  background-color: theme.$hightlight-color;
+  height: 8px;
+  width: 100px;
+  margin-bottom: 10px;
+}

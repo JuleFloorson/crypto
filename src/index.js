@@ -1,5 +1,5 @@
-import "./index.scss";
-import { app } from "./app";
+import './index.scss';
+import { app } from './app';
 
 const elements = app();
 elements.forEach(element => {
