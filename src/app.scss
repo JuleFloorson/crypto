@@ -43,3 +43,14 @@
   width: 100px;
   margin-bottom: 10px;
 }
+
+.output {
+  background-color: theme.$hightlight-color;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  padding: 10px;
+  border: 6px solid theme.$secondary-color;
+  border-radius: 20px;
+  width: 300px;
+}
