@@ -19,9 +19,14 @@ export function app() {
   //   const allCoins = ['Bitcoin', 'Etherium', 'Litecoin', 'Dash'];
 
   //   const coins = createCoins(allCoins);
-  const coins = getData();
+  async function outputCoin() {
+    const coins = await getData();
+    appendContent(main, coins);
+  }
+  outputCoin();
+
   appendContent(header, [logoImage, button]);
   appendContent(button, [stripeOne, stripeTwo, stripeThree]);
-  appendContent(main, coins);
+
   return [header, main];
 }

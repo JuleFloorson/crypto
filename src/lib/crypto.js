@@ -1,4 +1,4 @@
-import { createCoins } from './src/components/coins';
+import { createCoins } from '../components/coins';
 
 export async function getData() {
   //await the response of the fetch call
