@@ -57,4 +57,18 @@
 .loading {
   font-size: 100px;
   font-family: Arial, Helvetica, sans-serif;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0% {
+    color: theme.$secondary-color;
+  }
+
+  50% {
+    color: theme.$primary-color;
+  }
+
+  100% {
+    color: theme.$secondary-color;
+  }
 }
