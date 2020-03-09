@@ -9,7 +9,7 @@ export function createCoins(allCoins) {
   allCoins.forEach(coin => {
     const output = createElement('div', {
       className: 'output',
-      innerText: coin.name
+      innerText: coin.symbol
     });
     appendContent(container, output);
   });
