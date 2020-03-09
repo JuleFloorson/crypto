@@ -1,18 +1,17 @@
 import './coins.scss';
-// import { createElement, appendContent } from '../lib/dom';
+import { createElement, appendContent } from '../lib/dom';
 
-// export function coins(props) {
-//   const container = createElement('div', {
-//     className: 'coins'
-//   });
-//   props.items.forEach(item => {
-//     const element = createElement('div', {
-//       innerText: item,
-//       className: 'coin'
-//     });
+export function createCoins(allCoins) {
+  const container = createElement('div', {
+    className: 'coinsContainer'
+  });
 
-//     appendContent(container, element);
-//   });
-//   return container;
-// }
-// const allCoins = ['Bitcoin', 'Etherium', 'Litecoin', 'Dash'];
+  allCoins.forEach(coin => {
+    const output = createElement('div', {
+      className: 'output',
+      innerText: coin
+    });
+    appendContent(container, output);
+  });
+  return container;
+}
