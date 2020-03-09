@@ -20,9 +20,17 @@ export function app() {
 
   //   const coins = createCoins(allCoins);
   async function outputCoin() {
+    const loading = createElement('div', {
+      innerText: 'Loading...',
+      className: 'loading'
+    });
+    appendContent(main, loading);
+
     const coins = await getData();
     appendContent(main, coins);
+    main.removeChild(loading);
   }
+
   outputCoin();
 
   appendContent(header, [logoImage, button]);
